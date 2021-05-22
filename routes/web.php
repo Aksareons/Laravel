@@ -13,6 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/addfilm', function () {
+    return view('addfilm');
+})->name('addfilm');
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('admin');
+})->name('admin');
+Route::get('/afish', function () {
+    return view('afish');
+})->name('afish');
+Route::get('/home', function () {
+    return view('main');
+})->name('home');
+Route::get('/afisha', function () {
+    return view('afisha');
+})->name('afisha');
+Route::get('/filmcard', function () {
+    return view('filmcard');
+})->name('afisha');
