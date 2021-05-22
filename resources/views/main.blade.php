@@ -11,7 +11,7 @@
    
     <div class="carousel-inner">
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="http://pavbca.com/walldb/original/e/3/8/381322.jpg"  width="100%"  height="550" alt=""></svg>
+        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="/image/381322.jpg"  width="100%"  height="550" alt=""></svg>
 
         <div class="container">
           <div class="carousel-caption text-start">
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="http://pavbca.com/walldb/original/e/3/8/381322.jpg"  width="100%"  height="550" alt=""></svg>
+        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="/image/381322.jpg"  width="100%"  height="550" alt=""></svg>
 
         <div class="container">
           <div class="carousel-caption">
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="http://pavbca.com/walldb/original/e/3/8/381322.jpg"  width="100%"  height="550" alt=""></svg>
+        <svg class="bd-placeholder-img" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="/image/381322.jpg"  width="100%"  height="550" alt=""></svg>
 
         <div class="container">
           <div class="carousel-caption text-end">
