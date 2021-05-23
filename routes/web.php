@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\CinemaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +24,7 @@ Route::get('/', function () {
 Route::get('/afish', function () {
     return view('afish');
 })->name('afish');
-Route::get('/home', function () {
-    return view('main');
-})->name('home');
+Route::get('/home', [CinemaController::class, 'index']);
 Route::get('/afisha', function () {
     return view('afisha');
 })->name('afisha');

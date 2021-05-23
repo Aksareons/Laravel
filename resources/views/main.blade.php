@@ -59,29 +59,13 @@
     <div class="container bg-light">
     <h2 class="display-6 text-center mb-4">Смотрите сегодня</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">Краткое описание к фильму!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
-                  
-                </div>
-                <small class="text-muted">Длительность</small>
-              </div>
-            </div>
-          </div>
-        </div>
+      @foreach($films as $film)
         <div class="col">
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</svg>
 
             <div class="card-body">
-              <p class="card-text">Краткое описание к фильму!</p>
+              <p class="card-text">{{$film['title']}}!</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
@@ -92,171 +76,21 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</svg>
-
-            <div class="card-body">
-              <p class="card-text">Краткое описание к фильму!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
-                  
-                </div>
-                <small class="text-muted">Длительность</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</svg>
-
-            <div class="card-body">
-              <p class="card-text">Краткое описание к фильму!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
-                  
-                </div>
-                <small class="text-muted">Длительность</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</svg>
-
-            <div class="card-body">
-              <p class="card-text">Краткое описание к фильму!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
-                  
-                </div>
-                <small class="text-muted">Длительность</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</svg>
-
-            <div class="card-body">
-              <p class="card-text">Краткое описание к фильму!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
-                  
-                </div>
-                <small class="text-muted">Длительность</small>
-              </div>
-            </div>
-          </div>
-        </div>
+        @endforeach
       </div>
     </div>
     <div class="container bg-light">
     <h2 class="display-6 text-center mb-4">Смотрите скоро</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">Краткое описание к фильму!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
-                  
-                </div>
-                <small class="text-muted">Длительность</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
+          <div class="col">
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</svg>
-
             <div class="card-body">
               <p class="card-text">Краткое описание к фильму!</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
-                  
-                </div>
-                <small class="text-muted">Длительность</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</svg>
-
-            <div class="card-body">
-              <p class="card-text">Краткое описание к фильму!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
-                  
-                </div>
-                <small class="text-muted">Длительность</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</svg>
-
-            <div class="card-body">
-              <p class="card-text">Краткое описание к фильму!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
-                  
-                </div>
-                <small class="text-muted">Длительность</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</svg>
-
-            <div class="card-body">
-              <p class="card-text">Краткое описание к фильму!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
-                  
-                </div>
-                <small class="text-muted">Длительность</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="10%" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="https://i.playground.ru/e/yyp5-mwcXMy3mIAhol-Rlw.png?250x140" alt=""><text x="50%" y="50%" fill="#eceeef" dy=".3em">Название фильма</svg>
-
-            <div class="card-body">
-              <p class="card-text">Краткое описание к фильму!</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Описание</button>
-                  
-                </div>
+                                  </div>
                 <small class="text-muted">Длительность</small>
               </div>
             </div>
