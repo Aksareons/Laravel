@@ -54,8 +54,8 @@
                     <input type="text" name="srcimage" value="{{ $film['srcimage'] }}" class="form-control" id="srcimage" placeholder="Enter srcimagetitle">
                   </div>
                   <div class="form-group">
-                    <label for="cimena_id">cimena_id</label>
-                    <input type="number" name="cimena_id" value="{{ $film['cimena_id'] }}" class="form-control" id="cimena_id" placeholder="Enter cimena_id">
+                    <label for="time">time</label>
+                    <input type="number" name="time" value="{{ $film['time'] }}" class="form-control" id="time placeholder="Enter time>
                   </div>
                   
                       <!-- <div class="form-group">
