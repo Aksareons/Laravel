@@ -87,7 +87,7 @@ class AddFilmController extends Controller
     {
         
         $film->title = $request->title;
-        $film->cimena_id = $request->cimena_id;
+        $film->time = $request->time;
         $film->description = $request->description;
         $film->text = $request->text;
         $film->srcimage = $request->srcimage;
