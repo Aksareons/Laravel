@@ -91,7 +91,7 @@ class AddFilmController extends Controller
         $film->description = $request->description;
         $film->text = $request->text;
         $film->srcimage = $request->srcimage;
-        $film->time = $request->time;
+        $film->slug = $request->slug;
         
         // $film->cinema_id = 54;
         $film->save();
