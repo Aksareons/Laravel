@@ -40,14 +40,14 @@ Route::get('/afisha', function () {
 Auth::routes();
 
 
+Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index']);
+Route::get('/editfilm/{slug}', [App\Http\Controllers\Admin\HomeController::class, 'editFilm'])->name('editFilm');
+Route::post('/updatefilm/{slug}', [App\Http\Controllers\Admin\HomeController::class, 'updateFilm'])->name('updateFilm');
 
+Route::resource('addfilm', AddFilmController::class);
 
 
 Route::middleware(['role:admin'])->prefix('admin_panel')->group(function () {
-    Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index']);
-    Route::get('/editfilm/{slug}', [App\Http\Controllers\Admin\HomeController::class, 'editFilm'])->name('editFilm');
-    Route::post('/updatefilm/{slug}', [App\Http\Controllers\Admin\HomeController::class, 'updateFilm'])->name('updateFilm');
-
-    Route::resource('addfilm', AddFilmController::class);
+   
    
 });
