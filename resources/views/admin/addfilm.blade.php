@@ -53,8 +53,8 @@
                     <input type="text" name="srcimage" class="form-control" id="srcimage" placeholder="Enter srcimagetitle">
                   </div>
                   <div class="form-group">
-                    <label for="cimena_id">cimena_id</label>
-                    <input type="number" name="cimena_id" class="form-control" id="cimena_id" placeholder="Enter cimena_id">
+                    <label for="time">time</label>
+                    <input type="number" name="time" class="form-control" id="time" placeholder="Enter cimena_id">
                   </div>
                   
                       <!-- <div class="form-group">
