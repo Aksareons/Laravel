@@ -9,9 +9,15 @@ class CinemaController extends Controller
 {
     
     public function index() {
-        $films = Film::all();
-        return view('main', [
+        $films = Film::All();
+        return view('home', [
             'films' => $films
             ]);
+    }
+    public function getFilm($slug){
+        $film = Film::where('slug', $slug)->first();
+        return view('show-film', [
+            'film' => $film
+        ]);
     }
 }

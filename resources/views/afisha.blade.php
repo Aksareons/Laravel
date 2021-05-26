@@ -1,4 +1,4 @@
-@extends('home')
+@extends('layouts.app')
 
 @section('title-block')Страница фильмов@endsection
 @section('content')

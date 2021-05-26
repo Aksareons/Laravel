@@ -15,7 +15,7 @@ class CreateFilmsTable extends Migration
     {
         Schema::create('films', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('cimena_id')->unsigned();
+            $table->string('time');
             $table->string('title');
             $table->text('description');
             $table->text('text');

@@ -1,138 +1,104 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.83.1">
-    <title>Album example · Bootstrap v5.0</title>
+@extends('layouts.app')
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
-<link rel="stylesheet" href="/css/app.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+@section('content')
+<div class="bgimage">
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+    </div>
+    <div class="container">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="/image/381322.jpg"  width="100%"  height="550" alt=""></svg>
 
-    <!-- Bootstrap core CSS -->
-<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#7952b3">
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
-  </head>
-  <body>
-  
-    <a href="https://google.com"><div id="headbanner" height="220">
-    <!-- <p> tut choto est</p> -->
-
-    <br><br><br><br>
-      <!-- <img src="https://coverfiles.alphacoders.com/738/73830.jpg" alt=""> -->
-    </div></a>
-  <div id="testtest">
-  <div class="container-fluid">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom ">
-    <br><a href="/home" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-        <img src="https://startuptoday.co.uk/wp-content/uploads/2013/04/my-comapny.png" alt="" height="55" width="250" >
-      </a>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="/home" class="nav-link px-2 link-secondary">Главная</a></li>
-        <li><a href="/afisha" class="nav-link px-2 link-dark">Афиша</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-      </ul>
-      
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Первый слайд</h1>
+            <p>Слева будет текст</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Кнопка просмотра</a></p>
+          </div>
+        </div>
       </div>
-      <div class="px-3 py-2 border-bottom mb-1">
-      <div class="container d-flex flex-wrap justify-content-center">
-        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-        </form>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img"  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="/image/381322.jpg"  width="100%"  height="550" alt=""></svg>
 
-        <div class="text-end">
-          <button type="button" class="btn btn-light text-dark me-2">Login</button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Второй слайд</h1>
+            <p>Текст будет в центре</p>
+            <p><a class="btn btn-lg btn-primary" href="#">кнопка просмотра</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img"  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="/image/381322.jpg"  width="100%"  height="550" alt=""></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Третий слайд</h1>
+            <p>Текст будет справа</p>
+            <p><a class="btn btn-lg btn-primary" href="#">кнопка просмотра</a></p>
+          </div>
         </div>
       </div>
     </div>
-    </header>
-  </div>@yield('content')
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+        <div class="container-fluid bg-light">
+    <h2 class="display-6 text-center mb-4">Смотрите сегодня</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      @foreach($films as $film)
+        <div class="col">
+          <div class="card shadow-sm">
+          <p>{{ $film['srcimage']}}</p>
+          <p>{{ $film['title']}}</p>
+            
+            
 
-  <footer class="text-muted py-5 bg-white">
-  <div class="container">
-  <div class="row">
-    <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
-      <small class="d-block mb-3 text-muted">© 2017–2021</small>
+            <div class="card-body">
+              <p class="card-text">{{$film['description']}}!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="{{route('getFilm', [$film->slug])}}"><button type="button" class="btn btn-sm btn-outline-secondary">Подробно</button></a>
+                  
+                </div>
+                <small class="text-muted">{{$film['slug']}}</small>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        @endforeach
+     
+            
     </div>
-    <div class="col-6 col-md">
-      <h5>Features</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Cool stuff</a></li>
-        <li><a class="link-secondary" href="#">Random feature</a></li>
-        <li><a class="link-secondary" href="#">Team feature</a></li>
-        <li><a class="link-secondary" href="#">Stuff for developers</a></li>
-        <li><a class="link-secondary" href="#">Another one</a></li>
-        <li><a class="link-secondary" href="#">Last time</a></li>
-      </ul>
+    </br></br></br>
+    <h2 class="display-6 text-center mb-4">Новости и акции</h2>
+      <div class="bd-example">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Responsive image</text></svg>
+        </div>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <a href="google"><img src="https://png.pngtree.com/element_our/20190604/ourlarge/pngtree-banner-banner-paper-border-image_1474759.jpg" width="750"  height="150"alt=""></br></br></br></a>
+      <h1 class="display-4 fw-normal">СеоТекст</h1>
+      <p class="fs-5 text-muted">сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст сео текст </p>
     </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Resource name</a></li>
-        <li><a class="link-secondary" href="#">Resource</a></li>
-        <li><a class="link-secondary" href="#">Another resource</a></li>
-        <li><a class="link-secondary" href="#">Final resource</a></li>
-      </ul>
     </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Business</a></li>
-        <li><a class="link-secondary" href="#">Education</a></li>
-        <li><a class="link-secondary" href="#">Government</a></li>
-        <li><a class="link-secondary" href="#">Gaming</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>About</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Team</a></li>
-        <li><a class="link-secondary" href="#">Locations</a></li>
-        <li><a class="link-secondary" href="#">Privacy</a></li>
-        <li><a class="link-secondary" href="#">Terms</a></li>
-      </ul>
-    </div>
+    
   </div>
-  </div>
-  </div>
-</footer>
-  </body>
-  </html>
+</div>
+    </div>
+    
+    
+@endsection
